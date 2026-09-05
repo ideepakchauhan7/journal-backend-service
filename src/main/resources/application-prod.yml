@@ -1,0 +1,27 @@
+#spring:
+#server:
+#  port: 8081
+#  servlet:
+#    context-path: /journal
+#
+#spring:
+#  application:
+#    name: JournalApp
+#  data:
+#    mongodb:
+#      uri: ${MONGODB_URI:mongodb+srv://greatmanfor01_db_user:yB07Nya80ui8Fu9i@cluster0.l4wiwxi.mongodb.net/journaldb?retryWrites=true&w=majority&appName=Cluster0}
+#      database: ${MONGODB_DATABASE:journaldb}
+#      auto-index-creation: ${MONGODB_AUTO_INDEX_CREATION:false}
+#
+#server:
+#  port: 8081
+#  servlet:
+#    context-path: /
+
+spring:
+  data:
+    mongodb:
+      uri: ${MONGODB_URI:mongodb+srv://greatmanfor01_db_user:yB07Nya80ui8Fu9i@cluster0.l4wiwxi.mongodb.net/journaldb?retryWrites=true&w=majority&appName=Cluster0}
+
+server:
+  port: 8081
